@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "397d580a-bea4-4d3d-8198-63619117e116",
+		"name": "Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pets Read All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pets Read One",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pets/60ae795b497bff2192b7518e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pets",
+						"60ae795b497bff2192b7518e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pets Update One",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"newNamex\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/pets/60ae795b497bff2192b7518e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pets",
+						"60ae795b497bff2192b7518e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pets Delete One",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/pets/60ae795b497bff2192b7518e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pets",
+						"60ae795b497bff2192b7518e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pets Create One",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Mrs Wave insertOne\",\n    \"class\":\"dog\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/pets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pets"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
